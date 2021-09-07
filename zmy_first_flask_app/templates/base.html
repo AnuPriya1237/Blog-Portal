@@ -1,0 +1,24 @@
+<!-------------- We have seen that 404 and post html files have same format only there is change in h1 and p tags rest is same.
+So jinja2 really helps to reduce this duplicacy and using inheretance feature of jinja2. Creating a base html and 404 and post file will inherent data from base page.
+
+
+Actaully one more thing
+you can use jinja2 extension instead of html its on you the difference is when you are using jinja2 then you won't get more colourful or nicer view of
+the file as you see here in html files that sit. If you are using pycharm community use html extension and if you are using any other file editor use jinja2
+but you will have to install some packages for text appearance.
+
+------------------------>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href = "{{url_for('home')}}">Home</a>
+{% block content %}
+
+{% endblock %}
+</body>
+</html>

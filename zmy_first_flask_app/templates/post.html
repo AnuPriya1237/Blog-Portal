@@ -1,0 +1,39 @@
+<!---- this is for static info
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Page</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>My page content</p>
+
+</body>
+----->
+
+
+<!---for dynamic info
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Page</title>
+</head>
+<body>
+    <h1>{{ post['Title'] }}</h1>
+    <p>{{ post['Content'] }}</p>
+
+</body>
+
+-------------->
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ post['Title'] }}</h1>
+<p>{{ post['Content'] }}</p>
+{% endblock %}
